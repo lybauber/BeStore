@@ -1,4 +1,6 @@
 import Navitem from "./Navitem";
+import { NavLink } from "react-router-dom";
+import '../App.css'
 
 const Navbar = () => {
     return (
@@ -15,19 +17,24 @@ const Navbar = () => {
                 <div className="container text-center">
                 <ul className="navbar-nav justify-content-evenly">
                 <li className="nav-item">
-                    <Navitem name="Nutrition" />
+                    <NavLink className="nav nav-link"  aria-current="page" to="/smartphones">
+                         Smartphones
+                    </NavLink>
                 </li>
               
                 <li className="nav-item">
-                    <Navitem name="Clothes & Accessories" />
+                   
+                   <NavLink className="nav nav-link" aria-current="page" to="/decoration">
+                        Home-Decoration
+                    </NavLink>
                 </li>
                 
                 
                 <li className="nav-item">
-                    <Navitem name="Athletes" />
+                    <Navitem name="Fragances" />
                 </li>
                 <li className="nav-item">
-                    <Navitem name="Blog" />
+                    <Navitem name="Laptops" />
                 </li>
                 </ul>
                 </div>
@@ -37,28 +44,7 @@ const Navbar = () => {
         
         </nav>
 
-       
-        // <nav className="">
-        
-        // <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        //     <span className="navbar-toggler-icon"></span>
-        //      </button>
-        //     <ul class="nav nav-pills nav-fill" >
-        //     <li className="nav-item">
-        //         <Navitem name="Nutrition" />
-        //     </li>
-        //     <li className="nav-item">
-        //     <Navitem name="Clothes & Accessories" />
-        //     </li>
-        //     <li className="nav-item">
-        //     <Navitem name="Athletes" />
-        //     </li>
-        //     <li className="nav-item">
-        //     <Navitem name="Blog" />
-        //     </li>
-        //     </ul>
-            
-        // </nav>
+    
         
     )
 }

@@ -1,8 +1,10 @@
-
-
+import { NavLink } from "react-router-dom";
+import './brand.css'
 const Brand = () => {
     return (
-        <h1>BeFit</h1>
+        <NavLink  className='brand' to="/">
+            BeStore
+        </NavLink>
     )
 }
 
